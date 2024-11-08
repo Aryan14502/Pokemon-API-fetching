@@ -22,3 +22,38 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.pokemon-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pokemon-tile {
+  width: calc(25% - 20px);  /* Set each tile to take up 25% of the row width, minus gap */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.pokemon-tile:hover {
+  transform: scale(1.05);
+}
+
+.pokemon-tile-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.pokemon-tile-name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
